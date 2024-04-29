@@ -3,9 +3,10 @@ import random
 list = ["apple","orange","mango"]
 word = random.choice(list)
 display = []
-for i in word:
-    print("_")
+for i in range(len(word)):
+    display += "_"
 guess = input("Guess a letter : ").lower()
+print(guess)
 
 
 # end_of_game = False
