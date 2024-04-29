@@ -2,8 +2,9 @@ print("Welcome to HangMan!")
 import random
 list = ["apple","orange","mango"]
 word = random.choice(list)
+length = len(word)
 display = []
-for i in range(len(word)):
+for _ in range(length):
     display += "_"
 guess = input("Guess a letter : ").lower()
 print(guess)
