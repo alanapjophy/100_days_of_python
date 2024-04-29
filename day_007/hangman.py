@@ -13,3 +13,5 @@ while not end_of_game:
             print("Right")
         else:
             print("Wrong")
+if end_of_game:
+    print("true")
