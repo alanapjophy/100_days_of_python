@@ -4,7 +4,7 @@ list = ["apple","orange","mango"]
 word = random.choice(list)
 guess = input("Guess a letter : ").lower()
 display = []
-for "_" in word:
+for _ in word:
     print("_")
 end_of_game = False
 while not end_of_game:
