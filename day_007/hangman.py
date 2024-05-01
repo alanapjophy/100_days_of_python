@@ -7,3 +7,13 @@ display = []
 for i in range(word_length):
     display += "_"
 print(display)
+guess = input("Guess a letter: ").lower()
+# print(guess)
+position = 0
+for key in chosen_word:
+    position += 1
+    if guess == key:
+        # print("right")
+        display[position] = guess
+    else:
+        print("Wrong")
