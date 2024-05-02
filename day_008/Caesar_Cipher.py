@@ -14,11 +14,11 @@ def encrypt(text, shift):
     # The other way is that we can copy the list alphabet and paste in it so that the index won't become out of range. And also the index function will only read the first letter in the alphabet even if there are two letters for each.
     
     if plain_text + shift > 25:
-       new_string +=  alphabet[(plain_text + shift) -26]
+       cipher_string +=  alphabet[(plain_text + shift) -26]
     else:
       cipher_text =  alphabet[plain_text + shift]
-      new_string += cipher_text
-  print(f"The encoded text is {new_string}")
+      cipher_string += cipher_text
+  print(f"The encoded text is {cipher_string}")
   
     #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.  
     #e.g. 
